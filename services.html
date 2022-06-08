@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Certo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div>
+            <a href="#"><img src="assets/logotipo.svg" alt="" /></a>
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden space-x-6 md:flex font-custom ">
+            <a href="index.html" class="hover:text-darkGrayishBlue text-[#3C586D]" >home</a>
+            <a href="about.html" class="hover:text-darkGrayishBlue text-[#3C586D]">quem somos</a>
+            <a href="services.html" class="hover:text-darkGrayishBlue text-[#3C586D]">serviços</a>
+          </div>
+          <!-- Button -->
+          <a href="contact.html" class="hidden p-3 px-10 pt-3 text-white bg-laranjaOriginal rounded-full baseline hover:bg-[#ec2424] hover:shadow-lg shadow-cyan-500/50 transition duration-150 ease-out md:block font-custom " >fale conosco</a>
+  
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="index.html" class="text-[#3C586D]">home</a>
+            <a href="about.html" class="text-[#3C586D]">quem somos</a>
+            <a href="services.html" class="text-[#3C586D]">serviços</a>
+            <a href="contact.html" class="text-[#3C586D]">fale conosco</a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Hero -->
+
+    <div id='home' className='w-full top-[90px] '>
+        <img class='object-cover w-full absolute -z-10' src="./assets/quem somos - img.jpg" alt="">
+        <div class='w-full h-[90%] md:p-40 lg:p-52 flex flex-col justify-center items-center text-white px-4 text-center'>
+            <h1 class="md:text-[14px] lg:text-[18px] font-poppins font-light">Portfólio</h1>
+            <h1 class='md:text-[60px] lg:text-[80px] font-opensans font-extrabold py-4'>SERVIÇOS</h1>
+        </div>
+    </div>
+
+    <!-- Cards -->
+
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+        </div>
+      </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#202934] ">
+        <div class="flex flex-col md:flex-row items-center justify-around pt-20">
+          <!-- Logo -->
+          <div class="p-10">
+            <a href="#"><img src="assets/logotipo2.svg" alt="" /></a>
+          </div>
+          <!-- Menu Items -->
+          <div class="flex space-x-6 md:flex font-custom justify-end p-10">
+            <a href="index.html" class="hover:text-darkGrayishBlue text-white" >home</a>
+            <a href="about.html" class="hover:text-darkGrayishBlue text-white">quem somos</a>
+            <a href="services.html" class="hover:text-darkGrayishBlue text-white">serviços</a>
+          </div>
+          <!-- Button -->
+          <a href="contact.html" class="p-3 px-10 pt-3 text-white border-solid border-2 border-laranjaOriginal bg-opacity-100 rounded-full font-custom hover:bg-orange-500 hover:text-white md:block" >fale conosco</a>
+          
+      </footer>
+  
+      <footer class="bg-[#202934]">
+        <div class="flex justify-center">
+          <img class="mt-20" src="./assets/linha2.svg" alt="">
+      </div>
+      <br><br><br>
+  
+      <div class="flex flex-col md:flex-row justify-around">
+        <p class="font-poppins text-white font-light text-center">© 2022 Futuro Certo. Todos os direitos reservados.</p>
+        <div class="flex gap-6 items-center justify-center ">
+          <a href="https://www.instagram.com/futurocertoprev/" target="_blank"><img src="./assets/insta.svg" alt=""></a>
+          <a href="https://www.facebook.com/futurocertoprevfinanceiro" target="_blank"><img src="./assets/face.svg" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=gWvKZvUcZ8Q" target="_blank"><img src="./assets/yt.svg" alt=""></a>
+          <a href="https://www.linkedin.com/company/futurocerto/" target="_blank"><img src="./assets/linkedin.svg" alt=""></a>
+        </div>
+      </div>
+      
+      <br><br>
+      </footer>
+
+      <script src="js/script.js"></script>
+    </body>
+    </html>
