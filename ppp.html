@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Certo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6d9ed27a84.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div>
+            <a href="#"><img src="assets/logotipo.svg" alt="" /></a>
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden space-x-6 md:flex font-custom ">
+            <a href="index.html" class="hover:text-darkGrayishBlue text-[#3C586D]" >home</a>
+            <a href="about.html" class="hover:text-darkGrayishBlue text-[#3C586D]">quem somos</a>
+            <a href="services.html" class="hover:text-darkGrayishBlue text-[#3C586D]">serviços</a>
+          </div>
+          <!-- Button -->
+          <a href="contact.html" class="hidden p-3 px-10 pt-3 text-white bg-laranjaOriginal rounded-full baseline hover:bg-[#ec2424] hover:shadow-lg shadow-cyan-500/50 transition duration-150 ease-out md:block font-custom " >fale conosco</a>
+  
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="index.html" class="text-[#3C586D]">home</a>
+            <a href="about.html" class="text-[#3C586D]">quem somos</a>
+            <a href="services.html" class="text-[#3C586D]">serviços</a>
+            <a href="contact.html" class="text-[#3C586D]">fale conosco</a>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Main -->
+
+    <div class='max-w-[840px] mx-auto px-4 py-16 '>
+        <div class="bg-[#E9F2FB] inline-block px-6 py-2 rounded-full">
+            <a class="text-[#96A3B4] text-lg font-poppins" href="index.html">home    </a><i class="fa-solid fa-chevron-right fa-xs"></i>&nbsp;&nbsp;<a class="text-[#96A3B4] text-lg font-poppins" href="services.html">serviços    </a><i class="fa-solid fa-chevron-right fa-xs"></i>&nbsp;&nbsp; <span class="text-laranjaOriginal text-lg font-poppins">Plan. Previdência Privada (aberta e fechada)</span>
+        </div>
+
+        <div class="pt-10 max-w-[840px] mx-auto">
+            <p class="font-poppins text-lg text-[#96A3B4] font-light">
+                O Planejamento Previdência Privada é um estudo aprofundado do regulamento do plano em que o cliente esteja filiado ou deseja aderir. Planejar o futuro é fundamental para garantir uma reserva que possa lhe proporcionar proteção financeira a longo prazo com muita segurança, tranquilidade, bem-estar que assegure um complemento de sua aposentadoria e segurança para toda a família.
+        </div>
+       
+    </div>
+    <div class="flex justify-center">
+        <img class="mt-20" src="./assets/linha.svg" alt="">
+    </div>
+    <br><br>  
+
+    <!-- Fundamentos -->
+    
+    <div class="flex flex-col w-fulll justify-center items-center ">
+        <br>
+        <h2 class="font-poppins text-laranjaOriginal tracking-widest">METODOLOGIA</h2>
+        <br>
+        <h1 class="text-[48px] font-opensans text-[#3C586D] text-center font-bold">Como funciona</h1>
+        <br>
+  </div>
+    
+        <!-- colunas -->
+        <div  class="w-full py-[5rem] px-4 ">
+            <div class="max-w-[1400px] mx-auto grid md:grid-cols-4 gap-8">
+                <div class="w-full">
+                    <img class="w-15 mx-auto  " src="./assets/ico - análise.png" alt="">
+                    <h2 class="text-[#3C586D] font-opensans font-bold text-center mt-10 text-2xl">Análise</h2>
+                    <p class="mt-10 text-center font-poppins text-[#96A3B4] px-16 text-lg font-light">Do tempo de contribuição e simulações de todos os cenários de aposentadorias, antes e depois da reforma</p>
+                </div>
+                <div class="w-full">
+                    <img class="w-15 mx-auto" src="./assets/ico - contribuição.png" alt="">
+                    <h2 class="text-[#3C586D] font-opensans font-bold text-center mt-10 text-2xl">Contribuição</h2>
+                    <p class="mt-10 text-center font-poppins text-[#96A3B4] px-16 text-lg font-light">Das melhores formas e valores de contribuições visando alcançar o melhor benefício</p>
+                </div>
+                <div class="w-full">
+                    <img class="w-15 mx-auto" src="./assets/ico - perfil do investimento.png" alt="">
+                    <h2 class="text-[#3C586D] font-opensans font-bold text-center mt-10 text-2xl">Perfil de Investimento</h2>
+                    <p class="mt-10 text-center font-poppins text-[#96A3B4] px-16 text-lg font-light">De todo o histórico contributivo, através do CNIS e documentos complementares</p>
+                </div>
+                <div class="w-full">
+                    <img class="w-15 mx-auto" src="./assets/benefícios.png" alt="">
+                    <h2 class="text-[#3C586D] font-opensans font-bold text-center mt-10 text-2xl">Benefícios</h2>
+                    <p class="mt-10 text-center font-poppins text-[#96A3B4] px-16 text-lg font-light">Dos períodos sem contribuição para ajuste, e recolhimento em atraso</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Se interessou? -->
+        <div class="w-full h-[300px] bg-[#E9F2FB]">
+          <div class="flex flex-col mx-auto text-center items-center justify-center">
+              <br><br>
+              <h1 class="text-[48px] font-poppins text-[#3C586D] text-center font-medium">Se interessou?</h1>
+              <br>
+              <p class="text-[18px] font-poppins font-light leading-7 text-[#96A3B4] text-center max-w-2xl mb-10">Entre em contato para saber ainda mais sobre este serviço</p>
+              <a href="contact.html" class="p-3  px-10 pt-3 text-white bg-laranjaOriginal rounded-full baseline hover:bg-[#ec2424] hover:shadow-lg shadow-cyan-500/50 transition duration-150 ease-out md:block font-custom">Vamos conversar</a>
+              </a>
+          </div>
+      </div>
+      <br><br>
+
+        <div class="w-full py-[5rem] px-3 bg-white" >
+            <div class="max-w-[1400px] mx-auto grid md:grid-cols-4 gap-8">
+                <div class="w-full">
+                  <h1 class="font-opensans text-5xl text-[#3C586D] font-bold">Conheça mais serviços</h1>
+                </div>
+                <div class="w-full">
+                    <img class="mx-auto h-96 md:h-[580px] rotate-90 md:rotate-0" src="./assets/divisóriamaior.png" alt="">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+                    <img class="w-full" src="./assets/servimg1.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                    <div class="font-bold text-2xl font-opensans text-[#3C586D] mb-2">Planejamento do Regime Próprio da Previdência social (Servidor Público)</div>
+                    <br>
+                    <img src="./assets/linhacard.svg" alt="">
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block  px-3 py-1 font-custom text-md font-medium hover:text-orange-600 text-laranjaOriginal mr-2 mb-2"><a href="">saiba mais <i class="fa-solid fa-chevron-right fa-xs"></i></a></span>
+                    </div>
+                </div>
+        
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="./assets/servimg-2.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                    <div class="font-bold text-2xl font-opensans text-[#3C586D] mb-2">Planejamento Financeiro</div>
+                    <br>
+                    <img src="./assets/linhacard.svg" alt="">
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span class="inline-block  px-3 py-1 font-custom text-md font-medium hover:text-orange-600 text-laranjaOriginal mr-2 mb-2"><a href="">saiba mais <i class="fa-solid fa-chevron-right fa-xs"></i></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#202934] ">
+      <div class="flex flex-col md:flex-row items-center justify-around pt-20">
+        <!-- Logo -->
+        <div class="p-10">
+          <a href="#"><img src="assets/logotipo2.svg" alt="" /></a>
+        </div>
+        <!-- Menu Items -->
+        <div class="flex space-x-6 md:flex font-custom justify-end p-10">
+          <a href="index.html" class="hover:text-darkGrayishBlue text-white" >home</a>
+          <a href="about.html" class="hover:text-darkGrayishBlue text-white">quem somos</a>
+          <a href="services.html" class="hover:text-darkGrayishBlue text-white">serviços</a>
+        </div>
+        <!-- Button -->
+        <a href="contact.html" class="p-3 px-10 pt-3 text-white border-solid border-2 border-laranjaOriginal bg-opacity-100 rounded-full font-custom hover:bg-orange-500 hover:text-white md:block" >fale conosco</a>
+        
+    </footer>
+
+    <footer class="bg-[#202934]">
+      <div class="flex justify-center">
+        <img class="mt-20" src="./assets/linha2.svg" alt="">
+    </div>
+    <br><br><br>
+
+    <div class="flex flex-col md:flex-row justify-around">
+      <p class="font-poppins text-white font-light text-center">© 2022 Futuro Certo. Todos os direitos reservados.</p>
+      <div class="flex gap-6 items-center justify-center ">
+        <a href="https://www.instagram.com/futurocertoprev/" target="_blank"><img src="./assets/insta.svg" alt=""></a>
+        <a href="https://www.facebook.com/futurocertoprevfinanceiro" target="_blank"><img src="./assets/face.svg" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=gWvKZvUcZ8Q" target="_blank"><img src="./assets/yt.svg" alt=""></a>
+        <a href="https://www.linkedin.com/company/futurocerto/" target="_blank"><img src="./assets/linkedin.svg" alt=""></a>
+      </div>
+    </div>
+    
+    <br><br>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Certo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6d9ed27a84.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div>
+            <a href="#"><img src="assets/logotipo.svg" alt="" /></a>
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden space-x-6 md:flex font-custom ">
+            <a href="index.html" class="hover:text-darkGrayishBlue text-[#3C586D]" >home</a>
+            <a href="about.html" class="hover:text-darkGrayishBlue text-[#3C586D]">quem somos</a>
+            <a href="services.html" class="hover:text-darkGrayishBlue text-[#3C586D]">serviços</a>
+          </div>
+          <!-- Button -->
+          <a href="contact.html" class="hidden p-3 px-10 pt-3 text-white bg-laranjaOriginal rounded-full baseline hover:bg-[#ec2424] hover:shadow-lg shadow-cyan-500/50 transition duration-150 ease-out md:block font-custom " >fale conosco</a>
+  
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="index.html" class="text-[#3C586D]">home</a>
+            <a href="about.html" class="text-[#3C586D]">quem somos</a>
+            <a href="services.html" class="text-[#3C586D]">serviços</a>
+            <a href="contact.html" class="text-[#3C586D]">fale conosco</a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Vamos Conversar -->
+
+    <div class="w-full h-full bg-[#2849a5]">
+        <div class="py-16 px-20 flex flex-col">
+            
+            <div class="w-60 md:w-96">
+                <h1 class="font-opensans text-[80px] font-extrabold text-white leading-[96px]">Vamos conversar</h1>
+                <p class="font-poppins text-[18px] font-light text-white leading-8 mt-10">Tem alguma dúvida em relação a algum dos nossos serviços ou sobre qual o melhor caminho seguir? Nos envie uma mensagem e entraremos em contato assim que possível.</p>
+            </div>
+<br><br><br><br><br>
+
+            <div class=" w-full md:w-[500px]">
+                <div class="flex">
+                    <img src="./assets/ico - smartphone.png" alt="">
+                    <p class="text-white font-poppins text-sm md:text-lg font-light p-3">(81) 99153-2950</p>
+                </div>
+                <br>
+                <div class="flex">
+                    <img src="./assets/ico - phone.png" alt="">
+                    <p class="text-white font-poppins text-sm md:text-lg font-light p-3">(81) 3771-6267</p>
+                </div>
+                <br>
+                <div class="flex">
+                    <img class="h-12" src="./assets/ico - place.png" alt="">
+                    <p class="text-white font-poppins text-sm md:text-lg font-light p-3">R. Marquês do Paraná, 94, Espinheiro, Recife - PE.</p>
+                </div>
+            </div>
+
+            <div class="w-[500px]">
+                <iframe class="rounded mt-10 w-[300px] h-[200px] md:w-[500px] md:h-[350px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.5780700932482!2d-34.889887099999996!3d-8.0423606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18f3fe690513%3A0x49691dc0958f87d3!2sR.%20Marqu%C3%AAs%20do%20Paran%C3%A1%2C%2094%20-%20Espinheiro%2C%20Recife%20-%20PE%2C%2052021-050!5e0!3m2!1spt-BR!2sbr!4v1654719987198!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+<br>
+
+            <form class="w-full max-w-lg bg-white rounded p-6 flex-row">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block font-poppins tracking-wide text-[#3C586D] text-base font-bold mb-2" for="grid-first-name">
+                      Nome
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+                  </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label class="block font-poppins tracking-wide text-[#3C586D] text-base font-bold mb-2" for="grid-last-name">
+                      Sobrenome
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label class="block font-poppins tracking-wide text-[#3C586D] text-base font-bold mb-2" for="grid-password">
+                      E-mail
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="email" placeholder="seuemail@email.com">
+                  </div>
+                </div>
+                
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label class="block font-poppins tracking-wide text-[#3C586D] text-base font-bold mb-2" for="grid-password">
+                      Telefone
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="tel" placeholder="(81) 99999-9999">
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label class="block font-poppins  tracking-wide text-[#3C586D] text-base font-bold mb-2" for="grid-password">
+                      Assunto
+                      <div class="relative">
+                        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                          <option>Selecione uma opção...</option>
+                          <option>agendar visita</option>
+                          <option>Plan. do regime próprio (servidor)</option>
+                          <option>Plan. do regime geral (INSS)</option>
+                          <option>Planejamento financeiro</option>
+                          <option>Educação financeira e previdenciária</option>
+                          <option>CRM de serviços</option>
+                          <option>Prova de vida</option>
+                          <option>Plan. previdência privada</option>
+                          <option>Assuntos gerais</option>
+                        </select>
+                  </div>
+                </div>
+              </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label class="block font-poppins tracking-wide text-[#3C586D] text-base font-bold mb-2" for="grid-password">
+                      Enviar
+                    </label>
+                    <input class="cursor-pointer hover:bg-laranjaOriginal hover:text-white font-poppins  appearance-none block w-full bg-gray-200 text-[#3C586D] border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="submit" >
+                  </div>
+                </div>
+
+              </form>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-[#202934] ">
+        <div class="flex flex-col md:flex-row items-center justify-around pt-20">
+          <!-- Logo -->
+          <div class="p-10">
+            <a href="#"><img src="assets/logotipo2.svg" alt="" /></a>
+          </div>
+          <!-- Menu Items -->
+          <div class="flex space-x-6 md:flex font-custom justify-end p-10">
+            <a href="index.html" class="hover:text-darkGrayishBlue text-white" >home</a>
+            <a href="about.html" class="hover:text-darkGrayishBlue text-white">quem somos</a>
+            <a href="services.html" class="hover:text-darkGrayishBlue text-white">serviços</a>
+          </div>
+          <!-- Button -->
+          <a href="contact.html" class="p-3 px-10 pt-3 text-white border-solid border-2 border-laranjaOriginal bg-opacity-100 rounded-full font-custom hover:bg-orange-500 hover:text-white md:block" >fale conosco</a>
+          
+      </footer>
+  
+      <footer class="bg-[#202934]">
+        <div class="flex justify-center">
+          <img class="mt-20" src="./assets/linha2.svg" alt="">
+      </div>
+      <br><br><br>
+  
+      <div class="flex flex-col md:flex-row justify-around">
+        <p class="font-poppins text-white font-light text-center">© 2022 Futuro Certo. Todos os direitos reservados.</p>
+        <div class="flex gap-6 items-center justify-center ">
+          <a href="https://www.instagram.com/futurocertoprev/" target="_blank"><img src="./assets/insta.svg" alt=""></a>
+          <a href="https://www.facebook.com/futurocertoprevfinanceiro" target="_blank"><img src="./assets/face.svg" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=gWvKZvUcZ8Q" target="_blank"><img src="./assets/yt.svg" alt=""></a>
+          <a href="https://www.linkedin.com/company/futurocerto/" target="_blank"><img src="./assets/linkedin.svg" alt=""></a>
+        </div>
+      </div>
+      
+      <br><br>
+      </footer>
+
+      <script src="js/script.js"></script>
+    </body>
+    </html>
