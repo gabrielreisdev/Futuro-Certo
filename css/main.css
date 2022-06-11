@@ -691,6 +691,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 66.666667%;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -1329,6 +1333,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-laranjaOriginal:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(27 87% 52% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-900:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .hover\:text-darkGrayishBlue:hover {
