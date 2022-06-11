@@ -613,6 +613,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: inline-block;
 }
 
+/* zoom*/
+
+.zoom {
+  overflow: hidden;
+}
+
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.zoom:hover img {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  background-color: rgb(0 0 0 / 0.06);
+}
+
 .flex {
   display: flex;
 }
@@ -657,42 +677,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 800px;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-\[900px\] {
-  height: 900px;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-max {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .w-\[300px\] {
   width: 300px;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
 .w-2\/3 {
   width: 66.666667%;
-}
-
-.w-3\/5 {
-  width: 60%;
 }
 
 .max-w-md {
@@ -1021,11 +1015,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1145,20 +1134,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
-.text-\[15px\] {
-  font-size: 15px;
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .text-\[32px\] {
   font-size: 32px;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
-}
-
-.text-\[50px\] {
-  font-size: 50px;
 }
 
 .font-bold {
@@ -1316,6 +1297,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+/* End of Hamburger Menu */
+
+/* Overlay */
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5 ease;
+  background-color: blue;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .hover\:bg-\[\#ec2424\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(236 36 36 / var(--tw-bg-opacity));
@@ -1333,11 +1341,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-laranjaOriginal:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(27 87% 52% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-900:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .hover\:text-darkGrayishBlue:hover {
@@ -1434,6 +1437,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[500px\] {
     width: 500px;
+  }
+
+  .md\:w-\[1000px\] {
+    width: 1000px;
+  }
+
+  .md\:w-72 {
+    width: 18rem;
   }
 
   .md\:rotate-0 {
@@ -1535,13 +1546,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-left {
     text-align: left;
   }
-
-  .lg\:text-\[80px\] {
-    font-size: 80px;
-  }
 }
 
 @media (min-width: 1280px) {
+  .desktop\:w-96 {
+    width: 24rem;
+  }
+
   .desktop\:flex-row {
     flex-direction: row;
   }
@@ -1558,4 +1569,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row;
   }
 }
-
