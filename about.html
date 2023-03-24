@@ -96,16 +96,16 @@
     
     
     <!-- Jovi - Adri -->
-    <div class="container flex md:flex-row flex-col px-16 mx-auto justify-around">
+    <div id="both" class="container flex md:flex-row flex-col px-16 py-4 mx-auto justify-around">
       <div class="flex flex-col justify-center items-center">
-          <img class="hover:border-2 hover:border-gray-300 rounded-full p-2 cursor-pointer md:w-96" src="./assets/Jovita.png" alt="">
+          <img id="jovi" class="hover:border-2 hover:border-gray-300 rounded-full p-2 cursor-pointer md:w-96" src="./assets/Jovita.png" alt="">
         <h1 class="font-opensans text-4xl md:text-5xl text-[#3C586D] font-bold text-justify mt-2">Jovita Rodrigues</h1>
         <div class="w-96">
           <p class="font-poppins text-lg text-[#96A3B4] font-light text-justify pt-10">40 anos de experiência em Fundos de Pensão, sólido conhecimento em planos e investimentos em previdências privadas.</p>
         </div>
       </div>
       <div class="flex flex-col justify-center items-center">
-        <img class="hover:border-2 hover:border-gray-300 rounded-full p-2 cursor-pointer md:w-96" src="./assets/Adriana.png" alt="">
+        <img id="adri" class="hover:border-2 hover:border-gray-300 rounded-full p-2 cursor-pointer md:w-96" src="./assets/Adriana.png" alt="">
         <h1 class="font-opensans text-4xl md:text-5xl text-[#3C586D] font-bold text-justify mt-2">Adriana Falcão</h1>
         <div class="w-96">
           <p class="font-poppins text-lg text-[#96A3B4] font-light text-justify pt-10">30 anos de experiência em grandes instituições bancárias. Mestre em inovação e Doutoranda em Engenharia de Software.</p>
@@ -113,6 +113,39 @@
       </div>
     </div>
     <br><br><br>
+
+    <!-- Click Jovita -->
+
+    <div id="click_jovi" class="container mx-auto rounded-[90px] shadow-2xl flex md:flex-row flex-col px-10">
+        <img src="./assets/Jovita.png" class="w-96 p-12 mx-auto" alt="">
+      <div class="flex-col flex p-12">
+        <h1 class="font-opensans text-4xl md:text-5xl text-[#3C586D] font-bold text-justify mt-2">Jovita Rodrigues</h1>
+        <p class="font-poppins text-lg text-[#96A3B4] font-light text-justify pt-10">Bacharel em Direito e em Administração de
+          Empresas, Pós-graduada em Direito Previdenciário/ Processo Previdenciário e Gestão Estratégica de Pessoas,
+          Sócia-fundadora da Futuro Certo & Futuro Tech (Consultoria Financeira, Previdenciária e Soluções Tecnológicas). Possui
+          vasta experiência na área de Planejamento Previdenciário para Fundos de Pensão Fechado e Previdência Social. Com 40
+          anos de experiência na área de Previdência Privada, com ampla vivência em liderança de pessoas, conhecimento em Planos
+          de Benefícios BD, CD e BV. Perita em acordo com regras e regulamentos da legislação vigente, visão de risco, inovação
+          e governança.
+        </p>
+      </div>
+    </div>
+
+    <!-- Click Adriana -->
+
+    <div id="click_adri" class="container mx-auto rounded-[90px] shadow-2xl flex md:flex-row flex-col px-10 mt-20">
+        <img src="./assets/Adriana.png" class="w-96 p-12 mx-auto" alt="">
+      <div class="flex-col flex p-12">
+        <h1 class="font-opensans text-4xl md:text-5xl text-[#3C586D] font-bold text-justify mt-2">Adriana Falcão</h1>
+        <p class="font-poppins text-lg text-[#96A3B4] font-light text-justify pt-10">Economista e Administradora de Empresas, Mestrado em Inovação e Desenvolvimento, Doutoranda em Engenharia de Software
+          pelo Cesar.School e sócia-fundadora da Futuro Certo & Futuro Tech (Consultoria Financeira, Previdenciária e Soluções
+          Tecnológicas). Desenvolve pesquisas na área de Inclusão Digital, com ênfase no movimento digital das organizações,
+          adaptação dos colaboradores, experiência do usuário e transformação digital. Atua na área acadêmica, como professora e
+          palestrante. Extensa carreira executiva na área de Finanças, tendo atuado em Instituições Financeiras, nacionais e
+          multinacionais, de médio e grande porte.
+        </p>
+      </div>
+    </div>
 
 
     <!-- Fundamentos -->
@@ -168,7 +201,6 @@
     <br>
 
     <!-- Slide -->
-
   <div class=' text-white pb-10 text-center m-8'>
       <div class='max-w-[820px] mx-auto md:px-24 py16 bg-white drop-shadow-2xl text-center rounded-lg  md:flex'>
           <div class="">
@@ -278,5 +310,15 @@
         
     
         <script src="js/script.js"></script>
+        <script>
+          const joviImg = document.getElementById('jovi');
+          const clickJoviDiv = document.getElementById('click_jovi');
+          const bothDiv = document.getElementById('both');
+
+          joviImg.addEventListener('click', () => {
+            clickJoviDiv.style.display = 'block';
+            bothDiv.style.display = 'none';
+          });
+        </script>
     </body>
     </html>
