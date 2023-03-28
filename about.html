@@ -116,7 +116,7 @@
 
     <!-- Click Jovita -->
 
-    <div id="click_jovi" class="container mx-auto rounded-[90px] shadow-2xl flex md:flex-row flex-col px-10">
+    <div id="click_jovi" class="container mx-auto rounded-[90px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hidden flex md:flex-row flex-col px-10">
         <img src="./assets/Jovita.png" class="w-96 p-12 mx-auto" alt="">
       <div class="flex-col flex p-12">
         <h1 class="font-opensans text-4xl md:text-5xl text-[#3C586D] font-bold text-justify mt-2">Jovita Rodrigues</h1>
@@ -133,7 +133,7 @@
 
     <!-- Click Adriana -->
 
-    <div id="click_adri" class="container mx-auto rounded-[90px] shadow-2xl flex md:flex-row flex-col px-10 mt-20">
+    <div id="click_adri" class="container mx-auto rounded-[90px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hidden flex md:flex-row flex-col px-10 mt-20">
         <img src="./assets/Adriana.png" class="w-96 p-12 mx-auto" alt="">
       <div class="flex-col flex p-12">
         <h1 class="font-opensans text-4xl md:text-5xl text-[#3C586D] font-bold text-justify mt-2">Adriana Falcão</h1>
@@ -310,15 +310,40 @@
         
     
         <script src="js/script.js"></script>
-        <script>
-          const joviImg = document.getElementById('jovi');
-          const clickJoviDiv = document.getElementById('click_jovi');
-          const bothDiv = document.getElementById('both');
 
-          joviImg.addEventListener('click', () => {
-            clickJoviDiv.style.display = 'block';
+        <script>
+          const bothDiv = document.getElementById('both');
+          const clickJoviDiv = document.getElementById('click_jovi');
+          const joviImg = document.getElementById('jovi');
+          const clickAdriDiv = document.getElementById('click_adri');
+          const adriImg = document.getElementById('adri');
+
+          // Adiciona evento de clique à imagem com id "jovi"
+          joviImg.addEventListener('click', function () {
             bothDiv.style.display = 'none';
+            clickJoviDiv.style.display = 'flex';
+          });
+
+          // Adiciona evento de clique à imagem com id "adri"
+          adriImg.addEventListener('click', function () {
+            bothDiv.style.display = 'none';
+            clickAdriDiv.style.display = 'flex';
+          });
+
+          // Adiciona evento de clique à div com id "click_jovi"
+          clickJoviDiv.addEventListener('click', function () {
+            clickJoviDiv.style.display = 'none';
+            bothDiv.style.display = 'flex';
+          });
+
+          // Adiciona evento de clique à div com id "click_adri"
+          clickAdriDiv.addEventListener('click', function () {
+            clickAdriDiv.style.display = 'none';
+            bothDiv.style.display = 'flex';
           });
         </script>
+
+
+        
     </body>
     </html>
