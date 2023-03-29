@@ -64,6 +64,16 @@
     transform: scale(1.5);
 }
 
-
+#click_jovi {
+    /* Set initial styles */
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    /* Adjust width for screens wider than 768px */
+    #click_jovi {
+      width: auto;
+    }
+  }
 
 
