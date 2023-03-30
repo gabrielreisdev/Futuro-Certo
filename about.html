@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/6d9ed27a84.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
 
 
@@ -100,8 +100,8 @@
 <!-- Jovi - Adri -->
 <div id="both" class="container flex flex-wrap md:flex-nowrap px-4 py-4 mx-auto justify-around max-w-screen-lg">
   <div class="flex flex-col justify-center items-center mb-8 md:mb-0 md:mr-8">
-    <div id="jovi">
-      <img class="hover:border-2 hover:border-[#EF791A] rounded-full p-2 cursor-pointer shadow-lg" src="./assets/Jovita.png" alt="">
+    <div id="jovi" class="p-6">
+      <img class="hover:border-2 hover:border-[#EF791A] rounded-full p-2 cursor-pointer w-full md:w-96 shadow-lg" src="./assets/Jovita.png" alt="">
       <p class="font-opensans text-2xl md:text-5xl text-[#3C586D] font-bold text-center mt-2 pt-10 hover:underline cursor-pointer">Jovita Rodrigues</p>
     </div>
     <div class="w-full md:w-96">
@@ -109,7 +109,7 @@
     </div>
   </div>
   <div class="flex flex-col justify-center items-center">
-    <div id="adri">
+    <div id="adri" class="p-6">
       <img class="hover:border-2 hover:border-[#EF791A] rounded-full p-2 cursor-pointer w-full md:w-96 shadow-lg" src="./assets/Adriana.png" alt="">
       <p id="adri2" class="font-opensans text-2xl md:text-5xl text-[#3C586D] font-bold text-center pt-10 hover:underline cursor-pointer">Adriana Falcão</p>
     </div>
@@ -123,14 +123,16 @@
     <!-- Click Jovita -->
 
     <div id="click_jovi" class="container mx-auto rounded-[90px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hidden flex md:flex-row flex-col px-10">
-      <img src="./assets/Jovita.png" class="xl:w-96 w-full md:w-[420px] p-12 mx-auto" alt="">
-      <div class="flex-col flex p-12">
-        <div class="flex justify-between items-center">
-          <i class="fa-duotone fa-arrow-left" style="--fa-primary-color: #ef791a; --fa-secondary-color: #ef791a; --fa-secondary-opacity: 0.8;"></i>
-          <h1 class="font-opensans text-4xl md:text-5xl text-[#3C586D] font-bold text-center md:text-justify mt-2">Jovita Rodrigues</h1>
+      <div class="w-full flex items-center">
+        <img src="./assets/Jovita.png" class="p-2" alt="">
+      </div>
+      <div class="flex-col flex p-10">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <i class="ph ph-arrow-bend-up-left bold animation-pulse md:hidden"  style="color: #ef791a"></i>
+          <h1 class="font-opensans text-3xl md:text-4xl text-[#3C586D] font-bold text-center md:text-justify mt-2">Jovita Rodrigues</h1>
           <h1 class="cursor-pointer font-medium text-[#3C586D] hidden md:flex font-poppins">X</h1>
         </div>
-        <p class="font-poppins text-lg text-[#96A3B4] font-light text-justify pt-10">Bacharel em Direito e em Administração de
+        <p class="font-poppins md:text-base text-[#96A3B4] font-light text-justify pt-10">Bacharel em Direito e em Administração de
           Empresas, Pós-graduada em Direito Previdenciário/ Processo Previdenciário e Gestão Estratégica de Pessoas,
           Sócia-fundadora da Futuro Certo & Futuro Tech (Consultoria Financeira, Previdenciária e Soluções Tecnológicas). Possui
           vasta experiência na área de Planejamento Previdenciário para Fundos de Pensão Fechado e Previdência Social. Com 40
@@ -144,13 +146,16 @@
     <!-- Click Adriana -->
 
     <div id="click_adri" class="container mx-auto rounded-[90px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hidden flex md:flex-row flex-col px-10">
-        <img src="./assets/Adriana.png" class="w-96 p-12 mx-auto" alt="">
-      <div class="flex-col flex p-12">
-        <div class="flex justify-between items-center">
-          <h1 class="font-opensans text-4xl md:text-5xl text-[#3C586D] font-bold text-center md:text-justify mt-2">Adriana Falcão</h1>
+      <div class="w-full flex items-center p-2">
+        <img src="./assets/Adriana.png" class="" alt="">
+      </div>
+      <div class="flex-col flex p-10">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <i class="ph ph-arrow-bend-up-left bold animate-pulse md:hidden"  style="color: #ef791a"></i>
+          <h1 class="font-opensans text-2xl md:text-4xl text-[#3C586D] font-bold text-center md:text-justify mt-2">Adriana Falcão</h1>
           <h1 class="cursor-pointer font-medium text-[#3C586D] hidden md:flex font-poppins">X</h1>
         </div>
-        <p class="font-poppins text-lg text-[#96A3B4] font-light text-justify pt-10">Economista e Administradora de Empresas, Mestrado em Inovação e Desenvolvimento, Doutoranda em Engenharia de Software
+        <p class="font-poppins md:text-base text-[#96A3B4] font-light text-justify pt-10">Economista e Administradora de Empresas, Mestrado em Inovação e Desenvolvimento, Doutoranda em Engenharia de Software
           pelo Cesar.School e sócia-fundadora da Futuro Certo & Futuro Tech (Consultoria Financeira, Previdenciária e Soluções
           Tecnológicas). Desenvolve pesquisas na área de Inclusão Digital, com ênfase no movimento digital das organizações,
           adaptação dos colaboradores, experiência do usuário e transformação digital. Atua na área acadêmica, como professora e
@@ -303,7 +308,7 @@
     
         <footer class="bg-[#202934]">
           <div class="flex justify-center">
-            <img class="mt-20" src="./assets/linha2.svg" alt="">
+            <img class="hidden md:flex" src="./assets/linha2.svg" alt="">
           </div>
           <br><br><br>
     
